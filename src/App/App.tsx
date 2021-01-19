@@ -57,14 +57,13 @@ class App extends Component<Props, State> {
   }
 
   componentDidMount() {
+    if (window.location.pathname !== '/covid_comparisons') {
+      window.location.pathname = '/covid_comparisons'
+    }
     fetchCurrentStateData()
     .then(data => {
       const simplifiedStateData = simplifyAPIDataForSingleState(data)
       this.setState({ selectedUSAState: simplifiedStateData });
-      if (window.location.pathname !== '/') {
-        const category: string = window.location.pathname.slice(1)
-        this.handleComparisonClick(category)
-      } 
     })
     .catch(() => console.error);
 
@@ -196,8 +195,7 @@ class App extends Component<Props, State> {
                 />
               )
             }}
-          >
-          </Route>
+          />
         </Switch>
         {!this.state.selectedComparison?.category &&
           <nav>
