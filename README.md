@@ -1,4 +1,4 @@
-# [COVID Comparisons](https://codo-baggins.github.io/covid_comparisons/)
+# COVID Comparisons
 
 - Contributors: 
   - [Alyssa Bull](https://github.com/alyssabull)
@@ -7,7 +7,8 @@
 
 ## Overview
 
-- COVID Comparisons, or "COCO" for short, is an application that allows users to compare SARS-COV-19 statistics to other diseases and historical events.  The site is meant to bring some perspective to COVID-19's impact.  The various categories exist to give broader audiences something relatable that they may understand.  
+- COVID Comparisons, or "COCO" for short, is an application that allows users to compare SARS-COV-19 statistics to other diseases and historical events.  The site is meant to bring some perspective to COVID-19's impact.  The various categories exist to give broader audiences something relatable that they may understand. 
+- View the [DEPLOYED SITE]((https://alyssabull.github.io/covid_comparisons/)
 
 ## Tech Used
 
