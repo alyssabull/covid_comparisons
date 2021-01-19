@@ -57,9 +57,6 @@ class App extends Component<Props, State> {
   }
 
   componentDidMount() {
-    if (window.location.pathname !== '/covid_comparisons') {
-      window.location.pathname = '/covid_comparisons'
-    }
     fetchCurrentStateData()
     .then(data => {
       const simplifiedStateData = simplifyAPIDataForSingleState(data)
